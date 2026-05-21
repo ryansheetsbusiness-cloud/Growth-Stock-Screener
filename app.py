@@ -9,8 +9,34 @@ st.title("🚀 Multi-Index Growth Stock Hunter")
 st.subheader("Custom Built Screener: Auto-Calculating PEG and CAGR Profiles")
 
 # --- TICKER DATABASES ---
-russell_1000_watchlist = ["MSFT", "AAPL", "NVDA", "AMZN", "META", "GOOGL", "LLY", "AVGO", "V", "COST", "AMD", "NFLX"]
-russell_2000_watchlist = ["CELH", "ELF", "CROX", "POWI", "AXON", "STEP", "SG", "HALO", "AAON", "KNSL", "FIX", "SPSC"]
+# --- TICKER DATABASES (EXPANDED GROWTH WATCHLISTS) ---
+russell_1000_watchlist = [
+    # Mega-Cap Tech & AI Infrastructure
+    "MSFT", "AAPL", "NVDA", "AMZN", "META", "GOOGL", "AVGO", "AMD", "NFLX", "QCOM", "ORACLE", "CRM", "INTU", "NOW",
+    # Semiconductors & High-Growth Tech
+    "SMCI", "ASML", "LRCX", "KLAC", "PANW", "CRWD", "FTNT", "DDOG", "NET", "SNOW", "PLTR", "TST", "MDB",
+    # Weight-Loss, Biotech & Healthcare Innovators
+    "LLY", "NVO", "REGN", "VRTX", "ISRG", "BSX", "ABV",
+    # High-Growth Financials, Visa/MC Alternatives & Payments
+    "V", "MA", "AXP", "SQ", "PYPL", "COIN", "HOOD", "NU",
+    # Discretionary Momentum, Retail & Consumer Giants
+    "COST", "CMG", "MELI", "UBER", "ABNB", "TSLA", "DECK", "NKE", "LULU",
+    # Industrial, Aerospace & Energy Innovators
+    "GE", "CAT", "ETN", "PH", "TDG", "CEG", "VST", "DE"
+]
+
+russell_2000_watchlist = [
+    # Energy, Clean Tech & Power Infrastructure
+    "VRT", "AMPS", "NXT", "SHLS", "CLNE", "GEOS", 
+    # Consumer & Beverage Compounders
+    "CELH", "ELF", "CROX", "SG", "WING", "LOCO", "BROS", "CAVA",
+    # Medical Technology, Defense & Aerospace
+    "AXON", "HALO", "AAON", "PODD", "LNTH", "SWAV", "NTRA", "HAE",
+    # Software, Enterprise SaaS & Cybersecurity
+    "STEP", "KNSL", "FIX", "SPSC", "QLYS", "APPS", "ALTR", "BASE", "PRO", "YEXT",
+    # Niche Industrial & FinTech Disruption
+    "POWI", "UPST", "LMND", "SOFI", "LC", "FLYV", "MEDP"
+]
 
 market_choice = st.selectbox(
     "🎯 Select Market Index to Scan:",
