@@ -12,7 +12,7 @@ st.subheader("Custom Built Screener: Auto-Calculating PEG and CAGR Profiles")
 # --- TICKER DATABASES (EXPANDED GROWTH WATCHLISTS) ---
 russell_1000_watchlist = [
     # Mega-Cap Tech & AI Infrastructure
-    "MSFT", "AAPL", "NVDA", "AMZN", "META", "GOOGL", "AVGO", "AMD", "NFLX", "QCOM", "ORACLE", "CRM", "INTU", "NOW",
+    "MSFT", "AAPL", "NVDA", "AMZN", "META", "GOOGL", "AVGO", "AMD", "NFLX", "QCOM", "ORCL", "CRM", "INTU", "NOW",
     # Semiconductors & High-Growth Tech
     "SMCI", "ASML", "LRCX", "KLAC", "PANW", "CRWD", "FTNT", "DDOG", "NET", "SNOW", "PLTR", "TST", "MDB",
     # Weight-Loss, Biotech & Healthcare Innovators
